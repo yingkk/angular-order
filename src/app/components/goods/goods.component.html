@@ -1,0 +1,17 @@
+<div class="category" *ngFor="let item of categoryList">
+    <div class="category-name">
+        {{ item.title }}
+    </div>
+    <div class="category-list" >
+        <div class="item" *ngFor="let item of item.list" (click) = "itemDetailHandler(item._id)">
+            <div class="img">
+                <img [src]=" domain + item.img_url" alt="">
+            </div>
+            <div class="desc">
+                <div class="title">{{ item.title }}</div>
+                <div class="price">￥{{ item.price }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+

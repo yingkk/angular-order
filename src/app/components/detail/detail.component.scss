@@ -1,0 +1,43 @@
+.detail {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    padding: 20px 20px;
+    .img img{
+        width: 400px;
+        height: 400px;
+    
+    }
+    .other {
+        width: 380px;
+        height: 60px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        .title {
+           font-weight: bold;
+        }
+        .price {
+            color: orangered;
+        }
+    }
+    .desc {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        .label {
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            text-indent: 2em;
+            font-size: 14px;
+        }
+
+    }
+}

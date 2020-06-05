@@ -1,0 +1,14 @@
+<div class="detail">
+    <div class="img">
+        <img [src] = "domain + detailInfo.img_url" alt="">
+    </div>
+    <div class="other">
+        <div class="title">{{ detailInfo.title }}</div>
+        <div class="price">￥{{ detailInfo.price}}/份</div>
+    </div>
+    <div class="desc">
+        <div class="label">商品详情</div>
+        <div class="content" [innerHTML] = "detailInfo.content">
+        </div>
+    </div>
+</div>
